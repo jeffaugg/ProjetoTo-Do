@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+body {
+    background-color: #0099FF;
+}
+
+main{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    /*border-radius: 8px;: Arredonda os cantos do elemento.
+    padding: 20px;: Adiciona espaço interno ao redor do conteúdo do elemento.
+    margin: 40px auto;: Define margens, com 40 pixels em cima e em baixo e margens automáticas nos lados para centralização horizontal.
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);: Adiciona uma sombra ao elemento, especificando o deslocamento horizontal, vertical, raio de desfoque e cor da sombra.*/
+}
+
+.add-form {
+    display: flex; 
+    margin-bottom: 50px;
+    gap: 15px; /* Espaçamento entre as grades da mesma linha*/ 
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    flex: 1;
+    padding: 15px; 
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+
+    /* padding: diciona espaço interno ao redor do conteúdo do elemento. (O elemento fica maior)
+    outline:none : Remove a borda azul que aparece ao clicar no input
+    Define a espessura da fonte
+    */
+}
+
+button[type="submit"] {
+    background-color: #0099FF;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px;
+
+    /* border-collapse: collapse;: Remove o espaçamento entre as células da tabela.
+    margin-top: 20px;: Adiciona margem superior de 20 pixels. */
+
+}
+
+
+td, th {
+    padding: 10px 15px;
+    text-align: center;
+    border: 1px solid #DDD;
+}
+
+td{
+    color: #333;
+    font-weight: 600;
+}
+
+tr:nth-child(even){
+    background-color: #f5f5f5;
+
+    /* tr:nth-child(even): Adiciona um estilo a cada segunda linha da tabela. */
+}
+
+select {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: #ebebeb;
+}
+
+
+select:hover{
+    background-color:#DDD;
+}
+
+.btn-action {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-action:nth-child(1){
+    background-color: orange;
+    margin-right: 5px;
+}
+
+.btn-action:nth-child(2){
+    background-color: red;
+}
