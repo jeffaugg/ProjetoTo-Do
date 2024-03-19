@@ -13,7 +13,7 @@ const createTask = async (task) =>{
     // o ? é um placeholder, que será substituido pelos valores do array, na ordem em que aparecem no array (title, status, created_at) VALUES (?, ?, ?) é o mesmo que (title, status, created_at) VALUES (task.title, task.status, task.created_at)
     const dateUTC =  new Date(Date.now()).toUTCString(); 
     // pega a data atual e converte para UTC
-    const [createTask] = await connection.execute(query, [title, 'pendente', dateUTC]); 
+    const [createTask] = await connection.execute(query, [title, 'Pendente', dateUTC]); 
     // insere os valores title, status e created_at na tabela tasks, values são os valores que serão inseridos, 
 
     return {insertId: createTask.insertId};
